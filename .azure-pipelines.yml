@@ -25,6 +25,9 @@ jobs:
       Node10:
         NODE_VERSION: '10.x'
 
+  steps:
+    - template: .azure-pipelines-steps.yml
+
 - job: Mac
   pool:
     vmImage: 'macos-10.13'
